@@ -1,0 +1,29 @@
+
+/* FINAL LAYOUT CORRECTION */
+
+.main {
+    display: block;
+    position: relative;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 85px 24px 30px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 35px 18px;
+}
+
+.video-card {
+    min-width: 0;
+    width: 100%;
+}
+
+.video-card .thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}

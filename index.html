@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    
+    <header class="navbar">
+
+        <div class="left">
+            <span class="menu">☰</span>
+
+            <div class="logo">
+                <i class="fa-brands fa-youtube fa-xl" style="color: rgb(232, 4, 4);"></i>
+                <span>YouTube</span>
+                <sup>IN</sup>
+            </div>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="Search">
+
+            <button class="search-btn">⌕</button>
+            
+        </div>
+
+        <div class="right">
+            <button class="create">＋ Create</button>
+            <i class="fa-solid fa-microphone"></i>
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLx9sfPf3eGHU0nxMFo7-J14sMsp1PYODIXzMwTTN9Ad9IMITRb=s576-c-no" alt="Profile">
+        </div>
+
+    </header>
+
+
+    
+    <aside class="sidebar">
+
+        <div class="sidebar-section">
+
+            <a href="#" class="sidebar-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Shorts</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-tv"></i>
+                <span>Subscriptions</span>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="sidebar-section">
+
+            <h3 class="section-heading">
+                You <i class="fa-solid fa-chevron-right"></i>
+            </h3>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-list"></i>
+                <span>Playlists</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-video"></i>
+                <span>Your videos</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Watch later</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <span>Liked videos</span>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="sidebar-section">
+
+            <h3 class="section-heading">Subscriptions</h3>
+
+            <a href="#" class="sidebar-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVRuk95LGlBuoeSMW9xXce9SzYe-lUNcOynC5nQsYxYg&s=10" alt="Curly Tales">
+                <span>Curley Tales</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ay_ydU3ryW5X9cR4JTsjtsfc2rCE_YYmU-PwHcoK2w&s=10" alt="Ashish Chanchlani">
+                <span>Ashish Chanchlani</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vw8qGQTn3J39ROj8ltJbRgkp7K7VS-kqzx3Umi1oEw&s=10" alt="Teach">
+                <span>Techno Gamerz</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTha5ZWibADy6KSbqx4EEeAdNIJRz1gN_LrNE5H0bp6Hg&s" alt="series">
+                <span>T-Series</span>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="sidebar-section">
+
+            <h3 class="section-heading">Explore</h3>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Trending</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-music"></i>
+                <span>Music</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Gaming</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>News</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Sports</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+   
+    <main class="main">
+
+        
+        <div class="categories">
+            <button class="selected">All</button>
+            <button>Music</button>
+            <button>Gaming</button>
+            <button>Live</button>
+            <button>Technology</button>
+            <button>Programming</button>
+            <button>Artificial Intelligence</button>
+            <button>News</button>
+            <button>Podcasts</button>
+        </div>
+
+
+        
+        <section class="video-grid">
+
+            
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBRcXGxq_Swc35ZeYzf6VIUHfk-2LwlNDSc0zaFiIbw&s=10"
+                alt="Technology">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTuHExxRWNULV1MSBXQ8Sar2eS6DbQ-siDTikbVbnww&s=10" alt="Channel">
+
+                    <div>
+                        <h3>Bosscoder School of Technology Campus Tour....</h3>
+                        <p>Bosscoder School of Technology</p>
+                        <p>1.2M views · 3 Month ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqSThAVuB5_1AAMtCe9SDY3EdcpdCUJoDUocJbnObvA&s"
+                alt="Coding">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS78E8qQc2xNMTNyiE6C2dc_KYH4bsjsBnWbgf6sdh7Hw&s" alt="Channel">
+
+                    <div>
+                        <h3>Sam Altman On AI Revolution, Superintelligence & Future of...</h3>
+                        <p>Raj Shamani</p>
+                        <p>20M views · 1 week ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWxXJ5_8S55H-KlgyjuyHrjDy4gugT-D-1Ev3thj3uA&s=10"
+                alt="TMKOC">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmB4Cpd-oZzRtXBFRcldT2pcuYfAZMoEuScifNNIU-A&s=10" alt="Channel">
+
+                    <div>
+                        <h3>Taarak Mehta Ka Ooltah Chashmah - Throwback...</h3>
+                        <p>Sony Sab</p>
+                        <p>2.5M views · 3 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://img-cdn.publive.online/fit-in/1200x675/afaqs/media/media_files/2025/02/19/Rxgbt8OZbnOt8wcqaeAi.jpeg"
+                alt="India's Got Latent">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMXuY9fmfS4xsLaSiAUsBWXnwqhWFxsRN5gQhkB71VQ&s=10" alt="Channel">
+
+                    <div>
+                        <h3>INDIA'S GOT LATENT | BONUS EP 6 ft. Ashish Chanchlani...</h3>
+                        <p>Samay Raina</p>
+                        <p>50M views · 5 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://i.ytimg.com/vi/4regqoVh22g/maxresdefault.jpg"
+                alt="Developer">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxoPv8aj06GmMne34myYeVnWYSexrYaAmy_DddywvaJg&s=10" alt="Channel">
+
+                    <div>
+                        <h3>Living 24 hours in new home 😍</h3>
+                        <p>Sourav Joshi Vlogs</p>
+                        <p>10M views · 4 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- VIDEO 6 -->
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://i.ytimg.com/vi/KjEa7r-g58s/maxresdefault.jpg"
+                alt="Teamwork">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4w5RTrnnlxuYOGgf_8osXMUDfH2o_cKPNFfO9u-wzQ&s=10" alt="Channel">
+
+                    <div>
+                        <h3>How Google Engineers Build Products</h3>
+                        <p>Shark Tank India</p>
+                        <p>900K views · 6 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiVicwmuuQ7xw9hbVjLNYQ8bugfajLHBspQpiIxSNmA&s=10"
+                alt="Developer">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgXjMHU8RCotAsBiL988-rHi6ZxGAysJZISqboyHrbA&s" alt="Channel">
+
+                    <div>
+                        <h3>I Opened A Theam Park</h3>
+                        <p>Mr Beast</p>
+                        <p>60M views · 4 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zl6PqLRq9fjSynQZFUnAFskR5oUHVUDDxk3h-wXH4A&s=10"
+                alt="Developer">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlUnDB7qX0TBCq4ASwI1cng5igYuQZSNB0a0JhsxoPw&s=10" alt="Channel">
+
+                    <div>
+                        <h3>Jensen Huang Scandal | The Spy Who Took Down Nvidia's CEO </h3>
+                        <p> Dhruv Rathee</p>
+                        <p>1.7M views · 1 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="video-card">
+
+                <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkA8OepnIai7ci9FfU9vaczPtWgxJvMSWVysLJ0BuCGw&s=10"
+                alt="Developer">
+
+                <div class="video-info">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYc-5pA2MCec7QWTqpfvgBUTortuntJNrFuQgU82KEg&s=10" alt="Channel">
+
+                    <div>
+                        <h3>PM Modi's speech during the inauguration of FICCI Annual....</h3>
+                        <p>Nerandra Modi</p>
+                        <p>10M views · 4 days ago</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
